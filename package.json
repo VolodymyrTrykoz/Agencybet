@@ -1,0 +1,35 @@
+{
+  "name": "agencybet",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Volodymyr Trykoz <volodymyrtz@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "dragdealer": "^0.10.0",
+    "gsap": "^2.0.2",
+    "jquery": "^3.3.1",
+    "ks-vue-scrollmagic": "^1.0.2",
+    "nuxt": "^2.0.0",
+    "scrollmagic": "^2.0.6",
+    "vue-slide-bar": "^1.1.6",
+    "vue-typer": "^1.2.0",
+    "vuebar": "0.0.20"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0"
+  }
+}

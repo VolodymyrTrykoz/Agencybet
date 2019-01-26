@@ -1,0 +1,69 @@
+@import "~assets/sass/vars"
+@import "~assets/sass/main"
+.portfolio
+  &__img
+    transition: transform .1s linear, box-shadow .2s linear
+    height: 480px
+    img
+      transition: transform .2s linear
+  &__item
+    position: relative
+    margin-right: 70px
+    transform-style: preserve-3d
+    transform: perspective(800px)
+    will-change: transform
+    transition: transform .2s linear
+    &:last-child
+      margin-right: 0
+    .counter
+      font-size: 25px
+    .green
+      font-size: 90px
+    .heading
+      line-height: .9
+      position: absolute
+      z-index: 999
+      top: -60px
+      left: -20px
+      transition: transform .2s linear
+      transform: translateZ(0)
+      span
+        font-family: $bebas
+        font-size: 90px
+
+  &__heading
+    &Second
+      margin-left: 30px
+  &__descr
+    font-family: $roboto
+    font-size: 13px
+    margin: 30px 0
+    width: 85%
+  &__counter
+    position: absolute
+    bottom: 25px
+    left: -35px
+    transform: rotateZ(-90deg)
+    &--second
+      color: #CCCCCC
+      font-size: 10px
+  &__link
+    text-transform: uppercase
+    color: #8ACC95
+    padding-left: 50px
+    position: relative
+    transition: padding-left .2s ease-in-out
+    &:before
+      content: ''
+      position: absolute
+      height: 2px
+      width: 30px
+      background: #8ACC95
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      transition: width .2s ease-in-out
+    &:hover
+      padding-left: 65px
+      &:before
+        width: 45px

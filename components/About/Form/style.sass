@@ -1,0 +1,78 @@
+@import "~assets/sass/vars"
+@import "~assets/sass/main"
+.heading
+  margin: 10px 0
+.form
+  &Group
+    position: relative
+    width: 400px
+    margin-bottom: 40px
+    border-bottom: 2px solid rgba(204,204,204,.5)
+    &:after
+      content: ""
+      position: absolute
+      right: 0
+      bottom: -2px
+      height: 2px
+      width: 0
+      background: #fff
+      transition: width .2s ease-in-out
+    &:focus-within
+      &:after
+        left: 0
+        width: 100%
+    &:first-of-type
+      margin-top: 50px
+    &.valid
+      border-bottom: 2px solid #fff
+      label
+        transform: translateY(-150%)
+    &.invalid
+      border-bottom: 2px solid rgba(225, 33, 52, 1)
+  .btn
+    width: 187px
+  input, textarea
+    background: transparent
+    border: none
+    width: 400px
+    padding: 5px 0
+    font-family: $roboto
+    outline: transparent
+    color: #fff
+    &::-webkit-input-placeholder
+      font-family: $roboto
+      color: #fff
+      opacity: 0
+      transition: opacity .5s ease-in-out
+      position: relative
+      transform: translateY(-20%)
+  input
+    position: relative
+    z-index: 5
+    &:focus
+      ~ label
+        transform: translateY(-150%)
+      &::-webkit-input-placeholder
+        opacity: 1
+  textarea
+    resize: none
+    color: #f7f8fb
+  .textarea
+    position: relative
+    label
+      transform: translateY(-100%)
+      color: #fff
+  label
+    position: absolute
+    z-index: 1
+    color: rgba(247,247,247,.5)
+    top: 2px
+    left: 0
+    transition: transform .2s ease-in-out
+    font-family: $roboto
+$letters: 4
+.btn
+  &:hover,&:focus
+    @for $i from 1 through $letters
+      span:nth-child(#{$i})
+        transition-delay: 0.025s * $i

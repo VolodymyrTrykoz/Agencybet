@@ -1,0 +1,23 @@
+.clients
+  &__item
+    width: 150px
+    height: 55px
+    margin-top: -12px
+    overflow: hidden
+    img
+      position: absolute
+      width: 150px
+      height: 55px
+      transition: opacity .2s ease-in-out
+      &.active
+        opacity: 0
+      &:hover
+        &.active
+          opacity: 1
+  &__content
+    width: 150px
+    height: 55px
+    transform: translateY(100%)
+
+
+

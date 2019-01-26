@@ -1,0 +1,33 @@
+@import "~assets/sass/vars"
+.header
+  &__wrapper
+    display: flex
+    align-items: center
+    margin-top: 43px
+    font-size: 14px
+    position: relative
+    z-index: 1
+  &__logo
+    margin-left: 60px
+  img
+    width: 175px
+  &__lang
+    display: flex
+    margin: 0 60px 0 auto
+    div
+      margin-left: 15px
+      @extend %hover
+  span
+    color: rgba(87,95,101,1)
+    transition: color .2s ease-out
+    text-decoration: none
+    display: inline-block
+    cursor: pointer
+    &:hover
+      color: #fff
+    &.active
+      color: #fff
+  &__link
+    margin-left: 55px
+    @extend %hover
+
